@@ -92,6 +92,19 @@ if ($i > 0) {
     }
 }
 
+/// multiple IFs
+$mode = 1;
+if ($mode === 0) {
+    echo 'digital';
+} else if ($mode === 1) {
+    echo 'analog';
+} else {
+    echo 'who are you?';
+}
+echo '<hr>';
+// inline if - good to know!!!
+
+echo $i === 3 ? ' 3 is number ' : ' other ';
 
 
 ?>
