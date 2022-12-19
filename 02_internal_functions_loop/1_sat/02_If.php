@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IF </title>
 </head>
 <body>
 
@@ -66,7 +66,31 @@ if ($i === 3) {
     // else - other cases
     echo 'not defined number';
 }
+echo '<hr>';
 
+// nesting IFs
+
+$i = 3;
+
+// first level
+if ($i > 0) {
+    // second level
+    if ($i > 1) {
+        echo 'value is greater than 1';
+        echo '<hr>';
+    }
+
+    // logical operators
+    if ($i < 15 && $i > 2) {
+        echo 'Value is less than 15 and greater than 1';
+        echo '<hr>';
+    }
+
+    if ($i < 15 || $i > 3) {
+        echo 'less than 15 OR greater than 1';
+        echo '<hr>';
+    }
+}
 
 
 
