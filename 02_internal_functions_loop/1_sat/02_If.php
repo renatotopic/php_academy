@@ -105,6 +105,29 @@ echo '<hr>';
 // inline if - good to know!!!
 
 echo $i === 3 ? ' 3 is number ' : ' other ';
+echo '<hr>';
+
+
+// Task:
+$number = 13.2;
+// If $number: (is integer and greater than 5 and less than 20) OR (is string and greater than 8 and lesser than 18)
+if ((is_int($number) && $number > 5 && $number < 20) || (is_string($number) && $number > 8 && $number < 10)) 
+{    
+    // output "1"
+    echo "1";
+} elseif (is_string($number)) {
+    // If $number (is string)
+    echo '2';
+} elseif (!is_string($number)) {
+    // If $number (is NOT string)
+    echo '3';
+} elseif ($number > 5 && $number < 20) {
+// If $number (is greater than 5 and less than 20)
+    echo '4';
+} else {
+    // If nothing above
+    echo '5';
+}
 
 
 ?>
