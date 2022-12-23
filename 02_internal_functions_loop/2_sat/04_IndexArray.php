@@ -64,8 +64,8 @@ echo $arr[count($arr)-1], PHP_EOL;
 print_r($arr);
 echo "<hr>";
 
-
-const TEST123 = 'test1234';
+define("TEST123", "test1234");
+                                                   
 $testArr = [
     1,
     'string',
@@ -76,9 +76,8 @@ $testArr = [
 
 var_dump($testArr);
 
-in_array('string', $testErp, true),
-in_array('string', $testErp, true),
-
+in_array('string1', $testArr, true);
+in_array('string2', $testArr, true);
 
 ?>
     
