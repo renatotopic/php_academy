@@ -76,6 +76,7 @@ $testArr = [
 
 var_dump($testArr);
 
+// in_array — Checks if a value exists in an array
 in_array('string1', $testArr, true);
 in_array('string2', $testArr, true);
 
