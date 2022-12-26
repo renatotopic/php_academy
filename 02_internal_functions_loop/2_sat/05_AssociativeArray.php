@@ -54,7 +54,7 @@ echo "<hr>";
 
 // second example
 $array = ['lastname', 'email', 'phone'];
-var_dump(implode(",", $array));
+var_dump(implode(", ", $array));
 
 ?>
     
