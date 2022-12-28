@@ -9,6 +9,8 @@
 <body>
 <?php
 
+// ASSOCIATIVE ARRAYS
+
 $arr = [
     'id' => 1,
     'name' => 'John'
@@ -21,6 +23,7 @@ echo "<pre>";
 print_r($arr);
 echo "</pre>";
 
+// EXPLODE
 // create arr from string
 $cars = "bmw audi vw ford kia subaru opel";
 $cars = explode(" ", $cars);
@@ -45,6 +48,7 @@ for($i=0; $i < $sum_cars; ++$i) {
     echo $cars[$values[$i]] . "\n"; 
 }
 
+// IMPLODE
 // Join array elements with a string
 // example ordered list
 $elements = array('a', 'b', 'c');
