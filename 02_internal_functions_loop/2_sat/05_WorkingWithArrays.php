@@ -55,6 +55,60 @@ var_dump($users['08/08/1987']['Đuro']['Martin'][0]);
 echo "<hr>";
 
 // Array functions
+$arr1 = [1,2,'value1'];
+$arr2 = [
+    'test_key1' => 'value1',
+    'test_key2' => 'value2',
+];
+
+
+$arr1Keys = key($arr1);
+$arr2Keys = key($arr2);
+$arr1Values = array_values($arr1);
+$arr2Values = array_values($arr2);
+
+var_dump(isset($arr1Keys['test_key1']));
+unset($arr1Keys['test_key1']);
+var_dump(isset($arr1Keys['test_key1']));
+
+var_dump($arr1Keys);
+echo "<hr>";
+
+$url = 'https://www.php.net/manual/en/function.parse-url.php';
+
+// parse url 
+// https://www.php.net/manual/en/function.parse-url.php
+
+
+// parse url return array
+var_dump(parse_url($url));
+echo "<hr>";
+echo parse_url($url, PHP_URL_SCHEME);
+echo "<hr>";
+
+if(PHP_URL_SCHEME == 'https') {
+    echo "web app use HTTPS";
+}
+echo "<hr>";
+echo parse_url($url, PHP_URL_USER);
+echo "<hr>";
+echo parse_url($url, PHP_URL_PASS);
+echo "<hr>";
+echo parse_url($url, PHP_URL_HOST);
+echo "<hr>";
+echo parse_url($url, PHP_URL_PORT);
+echo "<hr>";
+echo parse_url($url, PHP_URL_PATH);
+echo "<hr>";
+echo parse_url($url, PHP_URL_QUERY);
+echo "<hr>";
+echo parse_url($url, PHP_URL_FRAGMENT);
+echo "<hr>";
+echo parse_url($url, PHP_URL_HOST);
+
+//read more:http://php.net/manual/en/ref.array.php
+//https://www.w3resource.com/php-exercises/php-basic-exercises.php
+//https://www.w3resource.com/php-exercises/php-array-exercises.php
 
 ?>
     
