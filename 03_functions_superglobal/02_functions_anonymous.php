@@ -30,7 +30,10 @@ $numbers = [12, 5, 3, 6, 11, 23];
 // boolean usort( $array, "function_name");
 usort($numbers, $customSort); //sort array with custom function
 var_dump($numbers);
+echo "<hr>";
+
+
 ?>
     
 </body>
-</html>q                                    
+</html>
