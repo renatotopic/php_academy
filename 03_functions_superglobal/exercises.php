@@ -60,7 +60,7 @@ if(!isset($_COOKIE[$cookie_name])) {
  */
 phpinfo();
 
-
+                                                                                                                                        
 ?>
     
 </body>
