@@ -14,25 +14,42 @@
   /*
 Create a custom function that accepts one string parameter and returns it reversed. 
 Example input: "random string" => output: "gnirts modnar". 
-Don't use built-in strrev() function.
+Don't use built-in strrev() function
 
 */
 
   // HOMEWORK - task 01
 
-  // Function with parameters
-  #reverseString method
-  function reverseString($inpStr)
-  {
-    echo "The reversed string is: ";
-    for ($i = strlen($reverseString) - 1; $i >= 0; $i--) {
-      echo $reverseString[$i];
-    }
-    echo $reverseString;
-  }
-  #driver
-  $inpStr = "CodeSpeedy Technologies";
-  reverseString($inpStr);
+  // 1 solution 
+  $myString = "Welcome to the IT sector";
+
+  // strlen - length of string
+  $Strlength = strlen($myString);
+ 
+// Reverse and Print string without using strrev()
+for($i=$Strlength -1;$i >=0; $i--){
+    echo $myString[$i]; //. '<br>'
+}    
+
+echo "<hr>";
+
+  // 2 solution 
+
+  //Declare string variable
+$StrVal= "ladies and gentlemen";
+ 
+//Reverse string 
+$myStrRev= implode(array_reverse(str_split($StrVal)));
+ 
+//Print reverted string
+echo $myStrRev;
+
+
+// 3 solution
+
+$array = ['ladies and gentlemen'];
+$imploded_array = implode( '', array_reverse($array));;
+
 
 
   ?>
