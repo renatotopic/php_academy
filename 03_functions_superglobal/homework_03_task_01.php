@@ -48,7 +48,7 @@ echo $myStrRev;
 // 3 solution
 
 $array = ['ladies and gentlemen'];
-$imploded_array = implode( '', array_reverse($array));;
+$imploded_array = implode( '', array_reverse($array));
 
 
 
